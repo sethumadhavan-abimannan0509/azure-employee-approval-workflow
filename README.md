@@ -10,7 +10,7 @@ Employees submit purchase requests through an HTTP API. The request is stored in
 
 ## Architecture Diagram
 
-![Azure Employee Approval Architecture](screenshots/azure-architecture.png)
+![Azure Employee Approval Architecture](screenshots/Architecture diagram.png)
 
 ## Technologies Used
 
