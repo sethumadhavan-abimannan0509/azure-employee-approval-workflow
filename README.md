@@ -8,21 +8,9 @@ This project demonstrates how cloud services can be integrated to automate a bus
 
 Employees submit purchase requests through an HTTP API. The request is stored in Azure Table Storage with a Pending status. Azure Logic Apps sends an adaptive card to Microsoft Teams, where an approver can approve or reject the request. Azure Functions then updates the request status.
 
-## Architecture
+## Architecture Diagram
 
-```mermaid
-flowchart TD
-    A[Employee] --> B[Azure Functions - Submit Purchase]
-    B --> C[Azure Table Storage]
-    B --> D[Azure Logic Apps]
-    D --> E[Microsoft Teams Adaptive Card]
-    E --> F[Approver]
-    F --> G[Approve or Reject]
-    G --> D
-    D --> H[Azure Functions - Approve Purchase]
-    H --> C
-    C --> I[Purchase Request Status Updated]
-```
+![Azure Employee Approval Architecture](screenshots/azure-architecture.png)
 
 ## Technologies Used
 
